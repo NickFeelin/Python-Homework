@@ -13,4 +13,13 @@ num_list = []
 for i in range(num):
     num_list.append(random.randint(1, 10))
 print(num_list)
-print(sum(num_list[::2]))
+def filter_odd(numbers):
+    for i in range(numbers):
+        if(numbers[i] % 2) == 0:
+            return True
+        else:
+            return False
+        
+new_sum = filter(filter_odd, num_list)
+print(sum(new_sum))
+#print(sum(num_list[::2]))
