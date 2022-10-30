@@ -17,6 +17,7 @@ new_text = old_text.split()
     
 # print(list(filter(filter_words, new_text)))
 new_text = old_text.split()
+
 for word in new_text:
     if 'абв' in word:
         new_text.remove(word)

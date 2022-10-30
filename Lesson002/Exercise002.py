@@ -12,8 +12,13 @@
 #     res.append(element)
 # print(res)
 
+# my_list = [2, 3, 4, 5, 6]
+# print_list = []
+# for i in range((len(my_list) + 1) // 2):
+#     print_list.append(my_list[i] * my_list[len(my_list) - 1 - i])
+# print(print_list)
+
 my_list = [2, 3, 4, 5, 6]
-print_list = []
-for i in range((len(my_list) + 1) // 2):
-    print_list.append(my_list[i] * my_list[len(my_list) - 1 - i])
+print_list = [i for i in range((len(my_list) + 1) // 2)]
+    # print_list.append(my_list[i] * my_list[len(my_list) - 1 - i])
 print(print_list)
